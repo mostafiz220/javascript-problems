@@ -1,12 +1,10 @@
-function reverseString(str) {
-    var reverse = "";
-    for (let i = 0; i < str.length; i++) {
-        var char = str[i];
-        reverse = char + reverse;
+var myWord = "i am muhammas mustafizur Rahman zillu and my wife is shahida jerin";
+var count = 0;
+for (let i = 0; i < myWord.length; i++) {
+    var char = myWord[i];
+    if (char == " " && myWord[i - 1] != " ") {
+        count++;
     }
-    return reverse;
 }
-
-var statement = "i am muhammas mustafizur Rahman zillu";
-var forAlien = reverseString(statement);
-console.log(forAlien);
+count++;
+console.log(count);
